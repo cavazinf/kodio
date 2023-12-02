@@ -1,0 +1,33 @@
+1. Escolha do Projeto:
+Encontre um Projeto Adequado: Procure por projetos que lhe interessem e onde você possa contribuir de acordo com suas habilidades.
+Explore as Issues do Projeto: Verifique as issues abertas do projeto no GitHub para encontrar tarefas ou problemas que você possa resolver.
+2. Fork do Repositório:
+Faça um Fork do Repositório: No repositório do projeto no GitHub, clique no botão "Fork" para criar uma cópia do repositório na sua conta.
+3. Clone o Repositório Forked:
+Clone o Repositório Forked: No terminal, clone o repositório forked para o seu ambiente local usando o comando git clone.
+bash
+Copy code
+git clone https://github.com/SEU_USERNAME/nome-do-projeto.git
+cd nome-do-projeto
+4. Crie uma Branch para Trabalhar:
+Crie uma Branch: Crie uma nova branch para trabalhar na sua contribuição, isso ajuda a manter o código base limpo.
+bash
+Copy code
+git checkout -b minha-contribuicao
+5. Implemente as Mudanças:
+Faça as Mudanças: Realize as modificações necessárias no código-fonte do projeto.
+6. Commit e Push das Mudanças:
+Adicione e Commite as Mudanças: Adicione os arquivos modificados, faça o commit e descreva as mudanças feitas.
+bash
+Copy code
+git add .
+git commit -m "Descrição das mudanças feitas"
+git push origin minha-contribuicao
+7. Crie um Pull Request (PR):
+Crie um Pull Request: Vá até o repositório original no GitHub e clique em "New Pull Request" para criar um PR para as suas mudanças.
+8. Mantenha o PR Atualizado:
+Mantenha seu PR Atualizado: Caso haja feedback ou se o código no repositório original for atualizado, faça as alterações necessárias na sua branch e atualize o PR.
+Dicas Adicionais:
+Siga as Diretrizes do Projeto: Alguns projetos possuem diretrizes específicas para contribuições. Leia e siga essas diretrizes.
+Participe das Discussões: Fique atento aos comentários e participe das discussões sobre seu PR.
+Seja Paciente e Respeitoso: Lembre-se de que os mantenedores do projeto são voluntários e podem levar tempo para revisar seu PR.
