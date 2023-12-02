@@ -1,0 +1,9 @@
+fun main() {
+    val formacao1 = Formacao("Formação de Kotlin", "Desenvolvimento de Software", 40)
+    formacao1.iniciarFormacao()
+    formacao1.concluirFormacao()
+
+    val curso1 = Curso("Introdução à Programação", "Tecnologia", 20, "João")
+    curso1.iniciarFormacao()
+    curso1.concluirFormacao()
+}
