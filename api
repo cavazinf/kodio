@@ -1,0 +1,43 @@
+Documentação da API
+1. Escolha de uma Ferramenta de Documentação:
+Swagger/OpenAPI: Uma especificação para documentar APIs RESTful. Com o Swagger, você pode descrever, gerar, visualizar e testar APIs.
+API Blueprint: Outra opção para descrever APIs. Uma linguagem de descrição de API que usa Markdown.
+Kotlin-Doc: Ferramenta padrão para documentação de código Kotlin. Pode ser usado para documentar detalhes específicos de métodos e classes, mas não é exclusivo para APIs REST.
+2. Anotações:
+Use anotações como @GetMapping, @PostMapping, @PutMapping, etc., do Spring para mapear endpoints para métodos de controle.
+Adicione descrições, exemplos, parâmetros, respostas esperadas, códigos de status HTTP usando anotações.
+3. Exemplo de Documentação:
+Exemplo de documentação usando Swagger com Spring Boot:
+
+kotlin
+Copy code
+@RestController
+class UserController {
+    
+    @ApiOperation(value = "Get list of users")
+    @GetMapping("/users")
+    fun getUsers(): List<User> {
+        // ...
+    }
+
+    @ApiOperation(value = "Create a new user")
+    @PostMapping("/users")
+    fun createUser(@RequestBody user: User): User {
+        // ...
+    }
+}
+Testes da API
+1. Testes Unitários:
+Crie testes unitários para classes de serviço que lidam com a lógica de negócios.
+Use frameworks de teste como JUnit para escrever e executar esses testes.
+2. Testes de Integração:
+Teste a integração entre os diferentes componentes da API.
+Use ferramentas como RestAssured para testar as solicitações HTTP e verificar as respostas.
+Mock frameworks como Mockito podem ser úteis para simular dependências externas.
+3. Testes de Contrato (Contract Testing):
+Garanta que o contrato entre consumidores e fornecedores de serviços REST seja mantido.
+Ferramentas como Pact ou Spring Cloud Contract podem ser usadas para testar contratos.
+Ferramentas Adicionais:
+Postman: Útil para testar chamadas de API manualmente.
+JUnit, Mockito: Frameworks de teste.
+SpringFox: Biblioteca para integrar o Spring Boot com o Swagger para documentação de API.
